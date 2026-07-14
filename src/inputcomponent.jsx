@@ -12,7 +12,7 @@ function Inputbox({
     <div className=" p-2 bg-gray-600 w-fit">
       <label className="font-semibold text-2xl23">{name}</label>
 
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-10">
         <div className="flex flex-row">
           <label className="text-amber-200 bg-blue-500 text-center p-2 ">
             Amount
