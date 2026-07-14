@@ -24,7 +24,7 @@ function Inputbox({
             value={currency} onChange={(e)=>setcurrency(e.target.value)}>
                 {currencylist.map((currencyname)=>{
                     return(
-                    <option value={currencyname}> 
+                    <option key={currencyname} value={currencyname}> 
                         {currencyname}
                     </option>)
                 })}
@@ -38,7 +38,7 @@ function Inputbox({
 
 export default Inputbox
 
-
- // e is event, target is to target that particular thing and line-19
-  // here value is used see above line to set that currency line -25
+// e is event, target is to target that particular thing and line-19
+// here value is used see above line to set that currency line -25
+// key is there to help when there is change in order then it help in dom to compare the element by there key and update the value 
   
