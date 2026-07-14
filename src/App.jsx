@@ -32,7 +32,7 @@ function App() {
 setcurrency={settocurrency}
 currencylist={currencylist}/>
 
-<button className='text-amber-50 bg-red-900 text-center mx-180 p-3 '
+<button className='text-amber-50 bg-red-900 text-center p-3 '
 onClick={convertt}>Converts</button>
 
 
