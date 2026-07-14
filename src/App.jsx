@@ -9,15 +9,16 @@ function App() {
   const[currency,setcurrency]=useState('inr')
   const currencyhook=Usecurrency(currency)
   const currencylist=Object.keys(currencyhook)
+
   const[tocurrency,settocurrency]=useState('usd')
   const[convert,toconvert]=useState('')
   const convertt=()=>toconvert(amount* (currencyhook[tocurrency]))
   console.log(currencylist)
   return (
-    <div className='bg-[url(https://images.unsplash.com/photo-1690983320828-c01b88baacb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] h-screen'>
-    <h1 className='text-amber-50 text-center text-4xl mx-150'> Currency Convertor</h1>
-    <br>
-    </br>
+    <div className='bg-[url(https://images.unsplash.com/photo-1690983320828-c01b88baacb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]
+     h-screen bg-cover flex flex-col items-center gap-4'>
+    <h1 className='text-amber-50 text-center text-4xl '> Currency Convertor</h1>
+
    
     <Inputbox name={'From'} amount={amount}
   setamount={setamount}
@@ -30,7 +31,6 @@ function App() {
  currency={tocurrency}
 setcurrency={settocurrency}
 currencylist={currencylist}/>
-
 
 <button className='text-amber-50 bg-red-900 text-center mx-180 p-3 '
 onClick={convertt}>Converts</button>
