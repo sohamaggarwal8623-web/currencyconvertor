@@ -15,7 +15,7 @@ function App() {
   const convertt=()=>toconvert(amount* (currencyhook[tocurrency]))
   console.log(currencylist)
   return (
-    <div className='bg-[url(https://images.unsplash.com/photo-1690983320828-c01b88baacb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]
+    <div className='bg-[url("/photo.png")]
      h-screen bg-cover flex flex-col items-center gap-4'>
     <h1 className='text-amber-50 text-center text-4xl '> Currency Convertor</h1>
 
